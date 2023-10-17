@@ -19,7 +19,7 @@ body {
     padding: 40px 35px;
     text-align: center;
 }
-/* This is the styling for the search bar image */
+/* Styling the position for search bar image */
 .search {
     width: 100%;
     display: flex;
@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
 }
 
-/* This is the styling for the search bar input field */
+/* Styling for the search bar input field */
 .search input {
     border: 0;
     outline: 0;
@@ -39,4 +39,21 @@ body {
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
+}
+
+/* Styling for search bar image color, button,  */
+.search button {
+    border: 0;
+    outline: 0;
+    background:#ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+/* Changed size of search button size */
+.search button img {
+    width: 18px;
+
 }
