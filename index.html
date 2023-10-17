@@ -58,10 +58,12 @@ const weatherIcon = document.querySelector(".weather-icon");
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     
+    /* If there is a 404 error, display error, but don't display data */ 
     if (response.status == 404) {
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
     } else {
+    /* If there is no 404 error, get data from api and show correct weather icon */
         var data = await response.json();
 
     /* Getting data from the API */
