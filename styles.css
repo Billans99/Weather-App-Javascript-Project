@@ -99,3 +99,8 @@ body {
     font-size: 28px;
     margin-top: -6px;
 }
+
+/* Makes App only display the search bar and button, everything else is hidden */ 
+.weather {
+    display: none;
+}
