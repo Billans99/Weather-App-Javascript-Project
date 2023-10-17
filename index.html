@@ -57,7 +57,12 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-    var data = await response.json();
+    
+    if (response.status == 404) {
+        document.querySelector(".error").style.display = "block";
+        document.querySelector(".weather").style.display = "none";
+    } else {
+        var data = await response.json();
 
     /* Getting data from the API */
     document.querySelector(".city").innerHTML = data.name;
@@ -78,8 +83,12 @@ async function checkWeather(city) {
         weatherIcon.src = "Weather App images/mist.png";
     } 
 
-    /* Makes the rest of app show after search */
-    document.querySelector(".weather").style.display = "block";
+     /* Makes the rest of app show after search */
+     document.querySelector(".weather").style.display = "block";
+     document.querySelector(".error").style.display = "none";
+    }
+
+    
 }
 
 /* Clicking on search button searches for city */
