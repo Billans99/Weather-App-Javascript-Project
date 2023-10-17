@@ -55,5 +55,23 @@ body {
 /* Changed size of search button size */
 .search button img {
     width: 18px;
+}
 
+/* Weather image (rain) */
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+/* Temperature heading styles */
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500px;
+}
+
+/* City heading styling */
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400px;
+    margin-top: -10px;
 }
