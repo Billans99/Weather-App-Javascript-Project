@@ -104,3 +104,12 @@ body {
 .weather {
     display: none;
 }
+
+/* Displays error message, will not display yet due to display: none */
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
